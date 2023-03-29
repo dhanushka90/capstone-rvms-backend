@@ -22,7 +22,7 @@ public class UserController {
 	private UserRepository userRepository;
 	
 	//get all user data
-	@GetMapping("allUserData")
+	@GetMapping("/allUserData")
 	public List<User> getAllUserData(){
 		return userRepository.findAll();
 	}

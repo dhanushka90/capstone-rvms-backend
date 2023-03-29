@@ -19,8 +19,8 @@ public class Sensor {
 	@Column(name = "time_stamp")
 	private String timeStamp; 
 	
-	@Column(name = "device_id")
-	private String deviceId;
+	@Column(name = "jr_id")
+	private String jrId;
 	
 	@Column(name = "temparature")
 	private String temparature; 
@@ -56,12 +56,12 @@ public class Sensor {
 		
 	}
 	
-	public Sensor(String timeStamp, String deviceId, String temparature, String accelerometerX, String accelerometerY,
+	public Sensor(String timeStamp, String jrId, String temparature, String accelerometerX, String accelerometerY,
 			String accelerometerZ, String gyroscopeX, String gyroscopeY, String gyroscopeZ, String longitude,
 			String latitude, String batterystatus) {
 		super();
 		this.timeStamp = timeStamp;
-		this.deviceId = deviceId;
+		this.jrId = jrId;
 		this.temparature = temparature;
 		this.accelerometerX = accelerometerX;
 		this.accelerometerY = accelerometerY;
@@ -85,11 +85,11 @@ public class Sensor {
 	public void setTimeStamp(String timeStamp) {
 		this.timeStamp = timeStamp;
 	}
-	public String getDeviceId() {
-		return deviceId;
+	public String getJrId() {
+		return jrId;
 	}
-	public void setDeviceId(String deviceId) {
-		this.deviceId = deviceId;
+	public void setJrId(String jrId) {
+		this.jrId = jrId;
 	}
 	public String getTemparature() {
 		return temparature;
