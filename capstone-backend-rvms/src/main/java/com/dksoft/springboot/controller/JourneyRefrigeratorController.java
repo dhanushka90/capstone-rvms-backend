@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.dksoft.springboot.model.JourneyRefrigerator;
 import com.dksoft.springboot.repository.JourneyRefrigeratorRepository;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v1/")
 public class JourneyRefrigeratorController {

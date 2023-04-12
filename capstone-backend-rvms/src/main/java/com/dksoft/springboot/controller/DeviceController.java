@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.dksoft.springboot.model.Device;
 import com.dksoft.springboot.repository.DeviceRepository;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v1/")
 public class DeviceController {

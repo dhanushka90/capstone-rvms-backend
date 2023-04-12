@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.dksoft.springboot.model.User;
 import com.dksoft.springboot.repository.UserRepository;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v1/")
 public class UserController {
